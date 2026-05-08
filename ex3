@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+
+
+    public static int encontrarMax(int num1, int num2) {
+        if (num1 > num2) {
+            return num1;
+        } else {
+            return num2;
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner e = new Scanner(System.in);
+
+        // Lendo dois números do usuário
+        System.out.print("Digite o primeiro número: ");
+        int n1 = e.nextInt();
+
+        System.out.print("Digite o segundo número: ");
+        int n2 = e.nextInt();
+
+
+        int maior = encontrarMax(n1, n2);
+
+
+        System.out.println("O maior número é: " + maior);
+
+   e.close();
+    }
+}
